@@ -19,6 +19,8 @@ public class IGVecR2 {
     // c.x = a.x + b.x
     // c.y = a.y + b.y
     public IGVecR2 suma(IGVecR2 b){
+        IGVecR2 c = new IGVecR2();
+        c.x = this.x + b.x
         //TODO: implementar
         return new IGVecR2();
     }
