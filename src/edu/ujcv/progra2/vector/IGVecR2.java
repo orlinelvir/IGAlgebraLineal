@@ -1,76 +1,104 @@
 package edu.ujcv.progra2.vector;
+import edu.ujcv.progra2.utility.LectorDeTecladoValidado;
 
 public class IGVecR2 {
 
-    //privado los datos
-    // un escalar que represente 'x' y 'y' los componentes del vector
-    double X;
-    double Y;
+    private int x;
+    private int y;
 
+    private LectorDeTecladoValidado lt = new LectorDeTecladoValidado();
 
-    // publico los constructores por defecto, copia, y conveniencia. recuerden a bob
+    public void sumar() {
+        double X1 = lt.leerEntero("Ingrese el valor de 'X' para el Vector A", "Intentelo de nuevo");
+        double Y1 = lt.leerEntero("Ingrese el valor de 'Y' para el vector A", "Intentelo de nuevo");
 
-
-    // publico accesoras y mutadoras
-
-    //publico interfase
-
-    //this es el vector a
-    // c.x = a.x + b.x
-    // c.y = a.y + b.y
-    public IGVecR2 suma(IGVecR2 b){
-        IGVecR2 c = new IGVecR2()
-        double X1 = this.("Ingrese el valor 'x' del vector A","intente de nuevo");
-        double Y1 = this.leerEntero("Ingrese el valor 'y' del vector A","intente de nuevo");
-
-        double X2 = this.leerEntero("Ingrese el valor 'x' del vector B","intente de nuevo");
-        double Y2 = this.leerEntero("Ingrese el valor 'y' del vector B","intente de nuevo");
+        double X2 = lt.leerEntero("Ingrese el valor de 'X' para el Vector B", "Intentelo de nuevo");
+        double Y2 = lt.leerEntero("Ingrese el valor de 'Y' para el Vector B", "Intentelo de nuevo");
 
         double resultX = X1 + X2;
         double resultY = Y1 + Y2;
 
-        System.out.println("El vector A es: "+"("+X1+","+Y1+")");
-        System.out.println("El vector B es: "+"("+X2+","+Y2+")");
-
-        System.out.println("El Vector C es: "+"("+resultX+","+resultY+")");
+        System.out.println("El Vector A es: " + "(" + X1 + "," + Y1 + ")");
+        System.out.println("El Vector B es: " + "(" + X2 + "," + Y2 + ")");
+        System.out.println("El Vector C es: " + "(" + resultX + "," + resultY + ")");
     }
 
-    public IGVecR2 resta(IGVecR2 b){
-        //TODO: implementar
-        return new IGVecR2();
+    public void restar() {
+        double X1 = lt.leerEntero("Ingrese el valor de 'X' para el Vector A", "Intentelo de nuevo");
+        double Y1 = lt.leerEntero("Ingrese el valor de 'Y' para el Vector A", "Intentelo de nuevo");
+
+        double X2 = lt.leerEntero("Ingrese el valor de 'X' para el Vector B", "Intentelo de nuevo");
+        double Y2 = lt.leerEntero("Ingrese el valor de 'Y' para el Vector B", "Intentelo de nuevo");
+
+        double resultX = X2 - X1;
+        double resultY = Y2 - Y1;
+
+        System.out.println("El vector A es: " + "(" + X1 + "," + Y1 + ")");
+        System.out.println("El vector B es: " + "(" + X2 + "," + Y2 + ")");
+
+        System.out.println("El Vector C es: " + "(" + resultX + "," + resultY + ")");
+
     }
 
-    //producto.
-    public  IGVecR2 escalarPorVector(double alpha){
-        //TODO: implementar
-        return new IGVecR2();
+    public void ProdPunto() {
+        double X1 = lt.leerEntero("Ingrese el valor de 'X' para el Vector A", "Intentelo de nuevo");
+        double Y1 = lt.leerEntero("Ingrese el valor de 'Y' para el Vector A", "Intentelo de nuevo");
+
+        double X2 = lt.leerEntero("Ingrese el valor de 'X' para el Vector B", "Intentelo de nuevo");
+        double Y2 = lt.leerEntero("Ingrese el valor de 'Y' para el Vector B", "Intentelo de nuevo");
+
+        double result = X1 * X2;
+        double result2 = Y1 * Y2;
+        double total = result + result2;
+
+        System.out.println("El Vector A es: " + "(" + X1 + "," + Y1 + ")");
+        System.out.println("El Vector B es: " + "(" + X2 + "," + Y2 + ")");
+        System.out.println("El Producto Punto es: " + total);
     }
 
-    public double productoPunto(IGVecR2 b){
-        //TODO: implementar
-        return 0.0;
+    public void ProdCoeficiente() {
+        double X1 = lt.leerEntero("Ingrese el valor de 'X' para el Vector A", "Intentelo de nuevo");
+        double Y1 = lt.leerEntero("Ingrese el valor de 'Y' para el Vector A", "Intentelo de nuevo");
+
+        double k = lt.leerEntero("Ingrese el coeficiente", "Intentelo de nuevo");
+
+        System.out.println("El Vector es: " + "(" + X1 + "," + Y1 + ")");
+
+        double totalX = k * X1;
+        double totalY = k * Y1;
+
+        System.out.println(" El Coeficiente es: " + "(" + totalX + "," + totalY + ")3");
     }
 
+    public void ProdCruz() {
+        double A1 = lt.leerEntero("Ingrese el valor de 'A1' para el vector A", "Intentelo de nuevo");
+        double A2 = lt.leerEntero("Ingrese el valor de 'A2' para el vector A", "Intentelo de nuevo");
+        double A3 = lt.leerEntero("Ingrese el valor de 'A3' para el vector A", "Intentelo de nuevo");
 
-    // no esta definido en R2.!!!!!
-    //public IGVecR2 productoCruz(IGVecR2 b){
+        double B1 = lt.leerEntero("Ingrese el valor de 'B1' para el vector B", "Intentelo de nuevo");
+        double B2 = lt.leerEntero("Ingrese el valor de 'B2' para el vector B", "Intentelo de nuevo");
+        double B3 = lt.leerEntero("Ingrese el valor de 'B3' para el vector B", "Intentelo de nuevo");
 
-    //}
+        double c1 = A2 * B3 + A3 * B2;
+        double c2 = A3 * B1 + B1 * A3;
+        double c3 = A1 * B2;
 
-
-    public double determinante(){
-        //TODO: implementar
-        return 0.0;
+        System.out.println("(" + "i" + c1 + "," + "j" + c2 + "," + "k" + c3 + ")");
     }
 
-    public double angulo(IGVecR2 b){
-        //TODO: implementar
-        return 0.0;
+    public void VecXMat() {
+        double x = lt.leerEntero("Ingrese el valor de 'X' para el Vector A", "Intentelo de nuevo");
+        double y = lt.leerEntero("Ingrese el valor de 'Y' para el Vector A", "Intentelo de nuevo");
+
+        double a1 = lt.leerEntero("Ingrese el valor A1 de la matriz", "Intentelo de nuevo");
+        double a2 = lt.leerEntero("Ingrese el valor A2 de la Matriz", "Intentelo de nuevo");
+        double a3 = lt.leerEntero("Ingrese el valor A3 de la matriz", "Intentelo de nuevo");
+        double a4 = lt.leerEntero("Ingrese el valor A4 de la matriz", "Intentelo de nuevo");
+
+        double total1 = x * a1 + y * a2;
+        double total2 = x * a3 + y * a4;
+
+        double total = total1 + total2;
+        System.out.println("El Total es: " + total);
     }
-
-    public double magnitud(){
-        return Math.sqrt(productoPunto(this));
-    }
-
-
 }

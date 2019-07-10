@@ -1,15 +1,15 @@
-package com.company;
+package edu.ujcv.progra2.utility;
 import java.util.Scanner;
-public class LectorTeclado {
+public class LectorDeTecladoValidado {
     private Scanner scanner;
-    private static LectorTeclado instance;
+    private static LectorDeTecladoValidado instance;
 
-    public LectorTeclado(){
+    public LectorDeTecladoValidado(){
         scanner = new Scanner(System.in);
     }
-    public static LectorTeclado getInstance(){
+    public static LectorDeTecladoValidado getInstance(){
         if (instance == null){
-            instance = new LectorTeclado();
+            instance = new LectorDeTecladoValidado();
         }
         return instance;
     }
