@@ -17,21 +17,21 @@ public class MenuPrincipal {
         int j;
         do {
             Scanner sc = new Scanner(System.in);
-            System.out.println("Calculadora CASIO Algebra Lineal©");
+            System.out.println("Calculadora De Algebra Lineal");
             System.out.println(" ");
             System.out.println(" ");
-            System.out.println("Seleccione la Dimension en la que desea Trabajar");
+            System.out.println("Seleccione la dimension en la que desea Trabajar");
             System.out.println("Seleccione una de las Opciones: ");
-            System.out.println("\t 1. R2");
-            System.out.println("\t 2. R3");
-            System.out.println("\t 3. R4");
-            System.out.println("\t 5. Salir del Programa");
+            System.out.println("\t\t 1. R2");
+            System.out.println("\t\t 2. R3");
+            System.out.println("\t\t 3. R4");
+            System.out.println("\t\t 5. ALT + F4 (SALIR)");
             j = lt.leerEntero("Ingrese una de las Opciones", "Intentelo de nuevo");
             switch (j) {
                 case 1:
                     System.out.println("Dimension en R2");
-                    System.out.println("\t 1. Vectores");
-                    System.out.println("\t 2. Matrices");
+                    System.out.println("\t\t 1. Vectores");
+                    System.out.println("\t\t 2. Matrices");
 
                     int j2 = lt.leerEntero("Ingrese una Opcion Valida", "Intentelo de nuevo");
                     switch (j) {
@@ -148,12 +148,12 @@ public class MenuPrincipal {
                             }
                         case 2:
                             System.out.println("Seleccione una de las Opciones para Matrices en R3");
-                            System.out.println("1. Suma de Matrices");
-                            System.out.println("2. Resta de Matrices");
-                            System.out.println("3. Multiplicar Matrices");
-                            System.out.println("4. Vector Por Matriz");
-                            System.out.println("5. Matriz Rotacion");
-                            System.out.println("5. Producto Punto");
+                            System.out.println("\t\t1. Suma de Matrices");
+                            System.out.println("\t\t2. Resta de Matrices");
+                            System.out.println("\t\t3. Multiplicar Matrices");
+                            System.out.println("\t\t4. Vector Por Matriz");
+                            System.out.println("\t\t5. Matriz Rotacion");
+                            System.out.println("\t\t5. Producto Punto");
                             int j10 = lt.leerEntero("Ingrese una Opcion Valida", "Intentelo de nuevo");
                             switch (j10) {
                                 case 1: {
@@ -189,16 +189,16 @@ public class MenuPrincipal {
                     }
                 case 3:
                     System.out.println("Seleccione una de las opciones para R4");
-                    System.out.println("1. Vectores");
-                    System.out.println("2. Matriz");
+                    System.out.println("\t\t1. Vectores");
+                    System.out.println("\t\t2. Matriz");
                     int j11 = lt.leerEntero("Ingrese una Opcion Valida", "Intentelo de nuevo");
                     switch (j11) {
                         case 2:
                             System.out.println("Seleccione una de las Opciones para Vectores en R4");
-                            System.out.println("1. Suma de vectores");
-                            System.out.println("2. Resta de vectores");
-                            System.out.println("3. Producto Punto");
-                            System.out.println("4. Producto por Coeficiente");
+                            System.out.println("\t\t1. Suma de vectores");
+                            System.out.println("\t\t2. Resta de vectores");
+                            System.out.println("\t\t3. Producto Punto");
+                            System.out.println("\t\t4. Producto por Coeficiente");
                             int j12 = sc.nextInt();
                             switch (j12) {
                                 case 1: {
@@ -227,11 +227,11 @@ public class MenuPrincipal {
                     switch (j13) {
                         case 2: {
                             System.out.println("Seleccione una de las Opciones para Matrices en R4");
-                            System.out.println("1. Suma");
-                            System.out.println("2. Resta");
-                            System.out.println("3. Multiplicacion");
-                            System.out.println("4. Escalar x Matriz");
-                            System.out.println("5. Matriz Rotacion");
+                            System.out.println("\t\t1. Suma");
+                            System.out.println("\t\t2. Resta");
+                            System.out.println("\t\t3. Multiplicacion");
+                            System.out.println("\t\t4. Escalar x Matriz");
+                            System.out.println("\t\t5. Matriz Rotacion");
                             int j14 = lt.leerEntero("Ingrese una Opcion Valida", "Intentelo de nuevo");
                             switch (j14) {
                                 case 1: {
