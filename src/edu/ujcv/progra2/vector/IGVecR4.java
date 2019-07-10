@@ -1,18 +1,11 @@
 package edu.ujcv.progra2.vector;
-
 import edu.ujcv.progra2.utility.LectorDeTecladoValidado;
 
 public class IGVecR4 {
-    private double x;
-    private double y;
-    private double z;
-    private double w;
 
-    {
+    private LectorDeTecladoValidado lt = new LectorDeTecladoValidado();
 
-        private LectorDeTecladoValidado lt = new LectorDeTecladoValidado();
-
-        public  suma(){
+    public void suma(){
         double x1 = lt.leerEntero("Ingrese el X del vector 1 ","Intente de nuevo");
         double y1 = lt.leerEntero("Ingrese el Y del vector 1 ","Intente de nuevo");
         double z1 = lt.leerEntero("Ingrese el Z del vector 1 ","Intente de nuevo");
@@ -31,7 +24,7 @@ public class IGVecR4 {
         System.out.println("el Vector resultado es: "+"("+a1+","+a2+","+a3+","+a4+")");
     }
 
-        public void resta(){
+    public void resta(){
         double x1 = lt.leerEntero("Ingrese el X del vector 1 ","Intente de nuevo");
         double y1 = lt.leerEntero("Ingrese el Y del vector 1 ","Intente de nuevo");
         double z1 = lt.leerEntero("Ingrese el Z del vector 1 ","Intente de nuevo");
@@ -50,7 +43,7 @@ public class IGVecR4 {
         System.out.println("el Vector resultado es: "+"("+a1+","+a2+","+a3+","+a4+")");
     }
 
-        public ProdPunto(){
+    public void ProdPunto(){
         double x1 = lt.leerEntero("Ingrese el X del vector 1 ","Intente de nuevo");
         double y1 = lt.leerEntero("Ingrese el Y del vector 1 ","Intente de nuevo");
         double z1 = lt.leerEntero("Ingrese el Z del vector 1 ","Intente de nuevo");
@@ -71,7 +64,7 @@ public class IGVecR4 {
         System.out.println("El producto punto es: "+TotalResult);
     }
 
-        public ProdPorCoeficiente(){
+    public void ProdPorCoeficiente(){
         double x1 = lt.leerEntero("Ingrese el X del vector 1 ","Intente de nuevo");
         double y1 = lt.leerEntero("Ingrese el Y del vector 1 ","Intente de nuevo");
         double z1 = lt.leerEntero("Ingrese el Z del vector 1 ","Intente de nuevo");
@@ -86,4 +79,4 @@ public class IGVecR4 {
 
         System.out.println("El producto por coeficiente es: "+"("+res1+","+res2+","+res3+","+","+res4+")");
     }
-    }
+}

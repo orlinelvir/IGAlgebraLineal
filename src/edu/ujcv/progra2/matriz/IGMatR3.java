@@ -9,26 +9,26 @@ public class IGMatR3 {
 
     private LectorDeTecladoValidado lt = new LectorDeTecladoValidado();
 
-    public SumarMatriz(){
-        double a1 = lt.leerEntero("Favor ingresar el numero a1","ingrese un entero");
-        double a2 = lt.leerEntero("Favor ingresar el numero a2","ingrese un entero");
-        double a3 = lt.leerEntero("Favor ingresar el numero a3","ingrese un entero");
-        double a4 = lt.leerEntero("Favor ingresar el numero a4","ingrese un entero");
-        double a5 = lt.leerEntero("Favor ingresar el numero a5","ingrese un entero");
-        double a6 = lt.leerEntero("Favor ingresar el numero a6","ingrese un entero");
-        double a7 = lt.leerEntero("Favor ingresar el numero a7","ingrese un entero");
-        double a8 = lt.leerEntero("Favor ingresar el numero a8","ingrese un entero");
-        double a9 = lt.leerEntero("Favor ingresar el numero a9","ingrese un entero");
+    public void SumarMatriz(){
+        double a1 = lt.leerEntero("Ingrese el numero de a1","Ingrese un numero Entero");
+        double a2 = lt.leerEntero("Ingrese el numero de a2","Ingrese un numero Entero");
+        double a3 = lt.leerEntero("Ingrese el numero de a3","Ingrese un numero Entero");
+        double a4 = lt.leerEntero("Ingrese el numero de a4","Ingrese un numero Entero");
+        double a5 = lt.leerEntero("Ingrese el numero de a5","Ingrese un numero Entero");
+        double a6 = lt.leerEntero("Ingrese el numero de a6","Ingrese un numero Entero");
+        double a7 = lt.leerEntero("Ingrese el numero de a7","Ingrese un numero Entero");
+        double a8 = lt.leerEntero("Ingrese el numero de a8","Ingrese un numero Entero");
+        double a9 = lt.leerEntero("Ingrese el numero de a9","Ingrese un numero Entero");
 
-        double b1 = lt.leerEntero("Favor ingresar el numero b1","ingrese un entero");
-        double b2 = lt.leerEntero("Favor ingresar el numero b2","ingrese un entero");
-        double b3 = lt.leerEntero("Favor ingresar el numero b3","ingrese un entero");
-        double b4 = lt.leerEntero("Favor ingresar el numero b4","ingrese un entero");
-        double b5 = lt.leerEntero("Favor ingresar el numero b5","ingrese un entero");
-        double b6 = lt.leerEntero("Favor ingresar el numero b6","ingrese un entero");
-        double b7 = lt.leerEntero("Favor ingresar el numero b7","ingrese un entero");
-        double b8 = lt.leerEntero("Favor ingresar el numero b8","ingrese un entero");
-        double b9 = lt.leerEntero("Favor ingresar el numero b9","ingrese un entero");
+        double b1 = lt.leerEntero("Ingrese el numero de b1","Ingrese un numero Entero");
+        double b2 = lt.leerEntero("Ingrese el numero de b2","Ingrese un numero Entero");
+        double b3 = lt.leerEntero("Ingrese el numero de b3","Ingrese un numero Entero");
+        double b4 = lt.leerEntero("Ingrese el numero de b4","Ingrese un numero Entero");
+        double b5 = lt.leerEntero("Ingrese el numero de b5","Ingrese un numero Entero");
+        double b6 = lt.leerEntero("Ingrese el numero de b6","Ingrese un numero Entero");
+        double b7 = lt.leerEntero("Ingrese el numero de b7","Ingrese un numero Entero");
+        double b8 = lt.leerEntero("Ingrese el numero de b8","Ingrese un numero Entero");
+        double b9 = lt.leerEntero("Ingrese el numero de b9","Ingrese un numero Entero");
 
         double c1 = a1+b1;
         double c2 = a2+b2;
@@ -45,25 +45,26 @@ public class IGMatR3 {
         System.out.println("|"+c4+" "+c5+" "+c6+"|");
         System.out.println("|"+c7+" "+c8+" "+c9+"|");
     }
-    public RestaMatriz(){
-        double a1 = lt.leerEntero("Favor ingresar el numero a1","ingrese un entero");
-        double a2 = lt.leerEntero("Favor ingresar el numero a2","ingrese un entero");
-        double a3 = lt.leerEntero("Favor ingresar el numero a3","ingrese un entero");
-        double a4 = lt.leerEntero("Favor ingresar el numero a4","ingrese un entero");
-        double a5 = lt.leerEntero("Favor ingresar el numero a5","ingrese un entero");
-        double a6 = lt.leerEntero("Favor ingresar el numero a6","ingrese un entero");
-        double a7 = lt.leerEntero("Favor ingresar el numero a7","ingrese un entero");
-        double a8 = lt.leerEntero("Favor ingresar el numero a8","ingrese un entero");
-        double a9 = lt.leerEntero("Favor ingresar el numero a9","ingrese un entero");
+    public void RestaMatriz(){
+        double a1 = lt.leerEntero("Ingrese el numero de a1","Ingrese un numero Entero");
+        double a2 = lt.leerEntero("Ingrese el numero de a2","Ingrese un numero Entero");
+        double a3 = lt.leerEntero("Ingrese el numero de a3","Ingrese un numero Entero");
+        double a4 = lt.leerEntero("Ingrese el numero de a4","Ingrese un numero Entero");
+        double a5 = lt.leerEntero("Ingrese el numero de a5","Ingrese un numero Entero");
+        double a6 = lt.leerEntero("Ingrese el numero de a6","Ingrese un numero Entero");
+        double a7 = lt.leerEntero("Ingrese el numero de a7","Ingrese un numero Entero");
+        double a8 = lt.leerEntero("Ingrese el numero de a8","Ingrese un numero Entero");
+        double a9 = lt.leerEntero("Ingrese el numero de a9","Ingrese un numero Entero");
 
-        double b1 = lt.leerEntero("Favor ingresar el numero b1","ingrese un entero");
-        double b2 = lt.leerEntero("Favor ingresar el numero b2","ingrese un entero");
-        double b3 = lt.leerEntero("Favor ingresar el numero b3","ingrese un entero");
-        double b4 = lt.leerEntero("Favor ingresar el numero b4","ingrese un entero");
-        double b5 = lt.leerEntero("Favor ingresar el numero b5","ingrese un entero");
-        double b6 = lt.leerEntero("Favor ingresar el numero b6","ingrese un entero");
-        double b7 = lt.leerEntero("Favor ingresar el numero b7","ingrese un entero");
-        double b9 = lt.leerEntero("Favor ingresar el numero b9","ingrese un entero");
+        double b1 = lt.leerEntero("Ingrese el numero de b1","Ingrese un numero Entero");
+        double b2 = lt.leerEntero("Ingrese el numero de b2","Ingrese un numero Entero");
+        double b3 = lt.leerEntero("Ingrese el numero de b3","Ingrese un numero Entero");
+        double b4 = lt.leerEntero("Ingrese el numero de b4","Ingrese un numero Entero");
+        double b5 = lt.leerEntero("Ingrese el numero de b5","Ingrese un numero Entero");
+        double b6 = lt.leerEntero("Ingrese el numero de b6","Ingrese un numero Entero");
+        double b7 = lt.leerEntero("Ingrese el numero de b7","Ingrese un numero Entero");
+        double b8 = lt.leerEntero("Ingrese el numero de b8","Ingrese un numero Entero");
+        double b9 = lt.leerEntero("Ingrese el numero de b9","Ingrese un numero Entero");
 
         double c1 = a1-b1;
         double c2 = a2-b2;
@@ -81,7 +82,7 @@ public class IGMatR3 {
         System.out.println("|"+c7+" "+c8+" "+c9+"|");
     }
 
-    public multiplicar(){
+    public void multiplicar(){
         double a1 = lt.leerEntero("Favor ingresar el numero a1","ingrese un entero");
         double a2 = lt.leerEntero("Favor ingresar el numero a2","ingrese un entero");
         double a3 = lt.leerEntero("Favor ingresar el numero a3","ingrese un entero");
@@ -118,7 +119,7 @@ public class IGMatR3 {
 
     }
 
-    public matrizXescalar(){
+    public void matrizXescalar(){
         double a1 = lt.leerEntero("Favor ingresar el numero a1","ingrese un entero");
         double a2 = lt.leerEntero("Favor ingresar el numero a2","ingrese un entero");
         double a3 = lt.leerEntero("Favor ingresar el numero a3","ingrese un entero");
@@ -129,7 +130,7 @@ public class IGMatR3 {
         double a8 = lt.leerEntero("Favor ingresar el numero a8","ingrese un entero");
         double a9 = lt.leerEntero("Favor ingresar el numero a9","ingrese un entero");
 
-        double Escalar = lt.leerEntero("Favor ingrese el escalar","Favor intente de nuevo");
+        double Escalar = lt.leerEntero("Favor ingrese el escalar","Favor Intente de nuevo");
 
         double c1 = Escalar*a1;
         double c2 = Escalar*a2;
@@ -146,8 +147,8 @@ public class IGMatR3 {
         System.out.println("|"+c7+" "+c8+" "+c9+"|");
     }
 
-    public MatrizRotacion(){
-        double grados = lt.leerFlotante("Favor ingrese los grados","intente de nuevo");
+    public void MatrizRotacion(){
+        double grados = lt.leerFlotante("Favor ingrese los grados","Intente de nuevo");
 
         double a1 = lt.leerEntero("Favor ingresar el numero a1","ingrese un entero");
         double a2 = lt.leerEntero("Favor ingresar el numero a2","ingrese un entero");
@@ -215,14 +216,14 @@ public class IGMatR3 {
         System.out.println("La Matriz Rotacion de Z:");
         System.out.println("|"+ARz+" "+BRz+" "+CRz+"|");
     }
-    public VecXMat(){
+    public void VecXMat(){
         double x = lt.leerEntero("Ingrese el valor 'x' del vector A","Intente de nuevo");
         double y = lt.leerEntero("Ingrese el valor 'y' del vector A","Intente de nuevo");
         double z = lt.leerEntero("ingrese el valor z del vector A","Intente de nuevo");
 
         double a1 = lt.leerEntero("Ingrese el valor A1 de la matriz","Intente de nuevo");
-        double a2 = lt.leerEntero("Ingrese el valor A2 de la Matriz","intente de nuevo ");
-        double a3 = lt.leerEntero("Ingrese el valor A3 de la matriz","intente de nuevo");
+        double a2 = lt.leerEntero("Ingrese el valor A2 de la Matriz","Intente de nuevo ");
+        double a3 = lt.leerEntero("Ingrese el valor A3 de la matriz","Intente de nuevo");
         double a4 = lt.leerEntero("Ingrese el valor A4 de la matriz","Intente de nuevo ");
         double a5 = lt.leerEntero("Favor ingresar el numero a5","ingrese un entero");
         double a6 = lt.leerEntero("Favor ingresar el numero a6","ingrese un entero");

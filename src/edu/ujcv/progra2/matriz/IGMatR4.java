@@ -1,26 +1,13 @@
 package edu.ujcv.progra2.matriz;
-
 import edu.ujcv.progra2.utility.LectorDeTecladoValidado;
 
 public class IGMatR4 {
-
-    // public static IGVecR2 rotacionZ (double angulo, IGVecR2 vector){
-//
-//    }
-
-    // public static IGVecR2 rotacionX (double angulo, IGVecR2 vector){
-//
-//    }
-
-    // public static IGVecR2 rotacionY (double angulo, IGVecR2 vector){
-//
-//    }
     private double a;
     private double b;
     private double c;
 
     private LectorDeTecladoValidado lt = new LectorDeTecladoValidado();
-    public suma(){
+    public void suma(){
         double a1 = lt.leerEntero("Favor ingresar el numero a1","ingrese un entero");
         double a2 = lt.leerEntero("Favor ingresar el numero a2","ingrese un entero");
         double a3 = lt.leerEntero("Favor ingresar el numero a3","ingrese un entero");
@@ -79,9 +66,9 @@ public class IGMatR4 {
         System.out.println("|"+c13+" "+c14+" "+c15+" "+c16+"|");
     }
 
-    public resta(){
-        double a1 = lt.leerEntero("Favor ingresar el numero a1","ingrese un entero");
-        double a2 = lt.leerEntero("Favor ingresar el numero a2","ingrese un entero");
+    public void resta(){
+        int a1 = lt.leerEntero("Favor ingresar el numero a1","ingrese un entero");
+        int a2 = lt.leerEntero("Favor ingresar el numero a2","ingrese un entero");
         double a3 = lt.leerEntero("Favor ingresar el numero a3","ingrese un entero");
         double a4 = lt.leerEntero("Favor ingresar el numero a4","ingrese un entero");
         double a5 = lt.leerEntero("Favor ingresar el numero a5","ingrese un entero");
@@ -137,7 +124,7 @@ public class IGMatR4 {
         System.out.println("|"+c9+" "+c10+" "+c11+" "+c12+"|");
         System.out.println("|"+c13+" "+c14+" "+c15+" "+c16+"|");
     }
-    public multiplicacion(){
+    public void multiplicacion(){
         double a1 = lt.leerEntero("Favor ingresar el numero a1","ingrese un entero");
         double a2 = lt.leerEntero("Favor ingresar el numero a2","ingrese un entero");
         double a3 = lt.leerEntero("Favor ingresar el numero a3","ingrese un entero");
@@ -194,7 +181,7 @@ public class IGMatR4 {
         System.out.println("|"+c9+" "+c10+" "+c11+" "+c12+"|");
         System.out.println("|"+c13+" "+c14+" "+c15+" "+c16+"|");
     }
-    public EscalarXMatriz(){
+    public void EscalarXMatriz(){
         double a1 = lt.leerEntero("Favor ingresar el numero a1","ingrese un entero");
         double a2 = lt.leerEntero("Favor ingresar el numero a2","ingrese un entero");
         double a3 = lt.leerEntero("Favor ingresar el numero a3","ingrese un entero");
@@ -222,6 +209,7 @@ public class IGMatR4 {
         double c7 = a7*escalar;
         double c8 = a8*escalar;
         double c9 = a9*escalar;
+        double c10 = a10*escalar;
         double c11 = a11*escalar;
         double c12 = a12*escalar;
         double c13 = a13*escalar;
@@ -235,7 +223,7 @@ public class IGMatR4 {
         System.out.println("|"+c13+" "+c14+" "+c15+" "+c16+"|");
     }
 
-    public MatrizRotacion(){
+    public void MatrizRotacion(){
         double a1 = lt.leerEntero("Favor ingresar el numero a1","ingrese un entero");
         double a2 = lt.leerEntero("Favor ingresar el numero a2","ingrese un entero");
         double a3 = lt.leerEntero("Favor ingresar el numero a3","ingrese un entero");
@@ -276,7 +264,7 @@ public class IGMatR4 {
         return a;
     }
 
-    public setA(double a) {
+    public void setA(double a) {
         this.a = a;
     }
 
@@ -284,7 +272,7 @@ public class IGMatR4 {
         return b;
     }
 
-    public setB(double b) {
+    public void setB(double b) {
         this.b = b;
     }
 
@@ -292,7 +280,7 @@ public class IGMatR4 {
         return c;
     }
 
-    public IGMatR4(double c) {
+    public void setC(double c) {
         this.c = c;
     }
 }

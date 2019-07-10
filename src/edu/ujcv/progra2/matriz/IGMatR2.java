@@ -1,36 +1,23 @@
 package edu.ujcv.progra2.matriz;
-
 import edu.ujcv.progra2.utility.LectorDeTecladoValidado;
 
 public class IGMatR2 {
-    // TODO: implementar.
 
-    //double x1,y1;
-    //double x2,y2;
+    private double a;
+    private double b;
+    private double c;
+    private LectorDeTecladoValidado lt = new LectorDeTecladoValidado();
 
+    public void suma(){
+        double a1 = lt.leerEntero("Ingrese el Numero correspondiente a a1","Intentelo de nuevo");
+        double a2 = lt.leerEntero("Ingrese el Numero correspondiente a a2","Intentelo de nuevo");
+        double a3 = lt.leerEntero("Ingrese el Numero correspondiente a a3","Intentelo de nuevo");
+        double a4 = lt.leerEntero("Ingrese el Numero correspondiente a a4","Intentelo de nuevo");
 
-    // double[][] m;
-
-    //IGVecR2 f1;
-    //IGVecR2 f2;
-
-    //IGVecR2 col1;
-    //IGVecR2 col2;
-    double a;
-    double b;
-    double c;
-    LectorDeTecladoValidado lt = new LectorDeTecladoValidado();
-
-    public suma(){
-        double a1 = lt.leerEntero("favor ingresar el numero a1","Favor intentar de nuevo");
-        double a2 = lt.leerEntero("Favor ingresar el numero a2","Favor intentar de nuevo");
-        double a3 = lt.leerEntero("favor ingresar el numero a3","Favor intentar de nuevo");
-        double a4 = lt.leerEntero("favor ingresar el numero a4", "Favor intentar de nuevo");
-
-        double b1 = lt.leerEntero("favor ingresar el numero b1","Favor intentar de nuevo");
-        double b2 = lt.leerEntero("Favor ingresar el numero b2","Favor intentar de nuevo");
-        double b3 = lt.leerEntero("favor ingresar el numero b3","Favor intentar de nuevo");
-        double b4 = lt.leerEntero("favor ingresar el numero b4", "Favor intentar de nuevo");
+        double b1 = lt.leerEntero("Ingrese el Numero correspondiente a b1","Intentelo de nuevo");
+        double b2 = lt.leerEntero("Ingrese el Numero correspondiente a b2","Intentelo de nuevo");
+        double b3 = lt.leerEntero("Ingrese el Numero correspondiente a b3","Intentelo de nuevo");
+        double b4 = lt.leerEntero("Ingrese el Numero correspondiente a b4","Intentelo de nuevo");
 
         double c1 = a1 + b1;
         double c2 = a2 + b2;
@@ -41,34 +28,35 @@ public class IGMatR2 {
         System.out.println("|"+c2+" "+c4+"|");
     }
 
-    public resta(){
-        double a1 = lt.leerEntero("favor ingresar el numero a1","Favor intentar de nuevo");
-        double a2 = lt.leerEntero("Favor ingresar el numero a2","Favor intentar de nuevo");
-        double a3 = lt.leerEntero("favor ingresar el numero a3","Favor intentar de nuevo");
-        double a4 = lt.leerEntero("favor ingresar el numero a4", "Favor intentar de nuevo");
+    public void resta(){
+        double a1 = lt.leerEntero("Ingrese el Numero correspondiente a a1","Intentelo de nuevo");
+        double a2 = lt.leerEntero("Ingrese el Numero correspondiente a a2","Intentelo de nuevo");
+        double a3 = lt.leerEntero("Ingrese el Numero correspondiente a a3","Intentelo de nuevo");
+        double a4 = lt.leerEntero("Ingrese el Numero correspondiente a a4","Intentelo de nuevo");
 
-        double b1 = lt.leerEntero("favor ingresar el numero b1","Favor intentar de nuevo");
-        double b2 = lt.leerEntero("Favor ingresar el numero b2","Favor intentar de nuevo");
-        double b3 = lt.leerEntero("favor ingresar el numero b3","Favor intentar de nuevo");
-        double b4 = lt.leerEntero("favor ingresar el numero b4", "Favor intentar de nuevo");
+        double b1 = lt.leerEntero("Ingrese el Numero correspondiente a b1","Intentelo de nuevo");
+        double b2 = lt.leerEntero("Ingrese el Numero correspondiente a b2","Intentelo de nuevo");
+        double b3 = lt.leerEntero("Ingrese el Numero correspondiente a b3","Intentelo de nuevo");
+        double b4 = lt.leerEntero("Ingrese el Numero correspondiente a b4","Intentelo de nuevo");
 
         double c1 = a1 - b1;
+        double c2 = a2 - b2;
         double c3 = a3 - b3;
         double c4 = a4 - b4;
 
         System.out.println("|"+c1+" "+c3+"|");
         System.out.println("|"+c2+" "+c4+"|");
     }
-    public multiplicacion(){
-        double a1 = lt.leerEntero("favor ingresar el numero a1","Favor intentar de nuevo");
-        double a2 = lt.leerEntero("Favor ingresar el numero a2","Favor intentar de nuevo");
-        double a3 = lt.leerEntero("favor ingresar el numero a3","Favor intentar de nuevo");
-        double a4 = lt.leerEntero("favor ingresar el numero a4", "Favor intentar de nuevo");
+    public void multiplicacion(){
+        double a1 = lt.leerEntero("Ingrese el Numero correspondiente a a1","Intentelo de nuevo");
+        double a2 = lt.leerEntero("Ingrese el Numero correspondiente a a2","Intentelo de nuevo");
+        double a3 = lt.leerEntero("Ingrese el Numero correspondiente a a3","Intentelo de nuevo");
+        double a4 = lt.leerEntero("Ingrese el Numero correspondiente a a4","Intentelo de nuevo");
 
-        double b1 = lt.leerEntero("favor ingresar el numero b1","Favor intentar de nuevo");
-        double b2 = lt.leerEntero("Favor ingresar el numero b2","Favor intentar de nuevo");
-        double b3 = lt.leerEntero("favor ingresar el numero b3","Favor intentar de nuevo");
-        double b4 = lt.leerEntero("favor ingresar el numero b4", "Favor intentar de nuevo");
+        double b1 = lt.leerEntero("Ingrese el Numero correspondiente a b1","Intentelo de nuevo");
+        double b2 = lt.leerEntero("Ingrese el Numero correspondiente a b2","Intentelo de nuevo");
+        double b3 = lt.leerEntero("Ingrese el Numero correspondiente a b3","Intentelo de nuevo");
+        double b4 = lt.leerEntero("Ingrese el Numero correspondiente a b4","Intentelo de nuevo");
 
         double c1 = (a1*b1+a2*b3);
         double c2 = (a3*b1+a4*b3);
@@ -78,13 +66,13 @@ public class IGMatR2 {
         System.out.println("|"+c1+" "+c3+"|");
         System.out.println("|"+c2+" "+c4+"|");
     }
-    public escalar(){
-        double a1 = lt.leerEntero("favor ingresar el numero a1","Favor intentar de nuevo");
-        double a2 = lt.leerEntero("Favor ingresar el numero a2","Favor intentar de nuevo");
-        double a3 = lt.leerEntero("favor ingresar el numero a3","Favor intentar de nuevo");
-        double a4 = lt.leerEntero("favor ingresar el numero a4", "Favor intentar de nuevo");
+    public void escalar(){
+        double a1 = lt.leerEntero("Ingrese el Numero correspondiente a a1","Intentelo de nuevo");
+        double a2 = lt.leerEntero("Ingrese el Numero correspondiente a a2","Intentelo de nuevo");
+        double a3 = lt.leerEntero("Ingrese el Numero correspondiente a a3","Intentelo de nuevo");
+        double a4 = lt.leerEntero("Ingrese el Numero correspondiente a a4","Intentelo de nuevo");
 
-        double Escalar = lt.leerEntero("Favor ingrese el escalar","Favor intente de nuevo");
+        double Escalar = lt.leerEntero("Ingrese el Escalar: ","Intentelo de nuevo");
 
         double b1 = Escalar*a1;
         double b2 = Escalar*a2;
@@ -94,11 +82,11 @@ public class IGMatR2 {
         System.out.println("|"+b1+" "+b3+"|");
         System.out.println("|"+b2+" "+b4+"|");
     }
-    public MatrizRotacion(){
-        double x = lt.leerEntero("ingrese el valor x del vector","intente de nuevo");
-        double y = lt.leerEntero("ingrese el valor y del vector","intente de nuevo");
+    public void MatrizRotacion(){
+        double x = lt.leerEntero("Ingrese el valor del Vector X","Intentelo de nuevo");
+        double y = lt.leerEntero("Ingrese el valor del Vector Y","Intentelo de nuevo");
 
-        double grados = lt.leerFlotante("Ingrese el angulo","intente de nuevo");
+        double grados = lt.leerFlotante("Ingrese el valor del angulo","Intentelo de nuevo");
 
         double a1 = Math.cos(grados);
         double a2 = Math.sin(grados);
@@ -123,7 +111,7 @@ public class IGMatR2 {
         return a;
     }
 
-    public setA(double a) {
+    public void setA(double a) {
         this.a = a;
     }
 
@@ -131,7 +119,7 @@ public class IGMatR2 {
         return b;
     }
 
-    public setB(double b) {
+    public void setB(double b) {
         this.b = b;
     }
 
@@ -139,8 +127,7 @@ public class IGMatR2 {
         return c;
     }
 
-    public IGMatR2() {
+    public void setC(double c) {
         this.c = c;
     }
-
 }

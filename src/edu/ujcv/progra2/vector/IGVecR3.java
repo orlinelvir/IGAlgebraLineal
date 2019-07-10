@@ -3,8 +3,9 @@ package edu.ujcv.progra2.vector;
 import edu.ujcv.progra2.utility.LectorDeTecladoValidado;
 
 public class IGVecR3 {
-    private int x;
-    private int y;
+
+    private double x;
+    private double y;
 
     private LectorDeTecladoValidado lt = new LectorDeTecladoValidado();
 
@@ -25,7 +26,7 @@ public class IGVecR3 {
         System.out.println("El vector B: "+"("+x2+","+y2+","+z2);
         System.out.println("El resultado es: "+"("+c1+","+c2+","+c3+")");
     }
-    public resta(){
+    public void resta(){
         double x1 = lt.leerEntero("Introduzca el valor x del vector a","Intente de nuevo");
         double y1 = lt.leerEntero("Introduzac el valor x del vector a","Intente de nuevo");
         double z1 = lt.leerEntero("Introduzca el valor z del vector a","intente de nuevo");
@@ -42,7 +43,7 @@ public class IGVecR3 {
         System.out.println("El vector B: "+"("+x2+","+y2+","+z2);
         System.out.println("El resultado es: "+"("+c1+","+c2+","+c3+")");
     }
-    public prodpunto(){
+    public void prodpunto(){
         double x1 = lt.leerEntero("Introduzca el valor x del vector a","Intente de nuevo");
         double y1 = lt.leerEntero("Introduzac el valor x del vector a","Intente de nuevo");
         double z1 = lt.leerEntero("Introduzca el valor z del vector a","intente de nuevo");
@@ -58,7 +59,7 @@ public class IGVecR3 {
         double finalresult = result1+result2+result3;
         System.out.println("el producto punto es: "+finalresult);
     }
-    public ProdPorCoeficiente() {
+    public void ProdPorCoeficiente() {
         double x1 = lt.leerEntero("Ingrese el X del vector 1 ", "Intente de nuevo");
         double y1 = lt.leerEntero("Ingrese el Y del vector 1 ", "Intente de nuevo");
         double z1 = lt.leerEntero("Ingrese el Z del vector 1 ", "Intente de nuevo");
