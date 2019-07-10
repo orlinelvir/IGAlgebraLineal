@@ -18,12 +18,13 @@ public class IGVecR2 {
     //this es el vector a
     // c.x = a.x + b.x
     // c.y = a.y + b.y
-    public IGVecR2 sumar(){
-        double X1 = lt.leerEntero("Ingrese el valor 'x' del vector A","intente de nuevo");
-        double Y1 = lt.leerEntero("Ingrese el valor 'y' del vector A","intente de nuevo");
+    public IGVecR2 suma(IGVecR2 b){
+        IGVecR2 c = new IGVecR2()
+        double X1 = this.("Ingrese el valor 'x' del vector A","intente de nuevo");
+        double Y1 = this.leerEntero("Ingrese el valor 'y' del vector A","intente de nuevo");
 
-        double X2 = lt.leerEntero("Ingrese el valor 'x' del vector B","intente de nuevo");
-        double Y2 = lt.leerEntero("Ingrese el valor 'y' del vector B","intente de nuevo");
+        double X2 = this.leerEntero("Ingrese el valor 'x' del vector B","intente de nuevo");
+        double Y2 = this.leerEntero("Ingrese el valor 'y' del vector B","intente de nuevo");
 
         double resultX = X1 + X2;
         double resultY = Y1 + Y2;
