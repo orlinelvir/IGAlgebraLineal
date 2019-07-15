@@ -226,7 +226,7 @@ public class MenuPrincipal {
                     int j13 = sc.nextInt();
                     switch (j13) {
                         case 2: {
-                            System.out.println("Seleccione una de las Opciones para Matrices en R4");
+                            System.out.println("\tSeleccione una de las Opciones para Matrices en R4");
                             System.out.println("\t\t1. Suma");
                             System.out.println("\t\t2. Resta");
                             System.out.println("\t\t3. Multiplicacion");
